@@ -1,7 +1,9 @@
 <ion-header>
-    
-        </ion-header>
-      
+  <ion-toolbar>
+  <h1></h1>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content>
   <div class="card">
     <div class="header">
@@ -9,14 +11,25 @@
         <img src="assets/Img/hood.jpg" alt="">
       </div>
     </div>
-  </div>
-<div class="icons">
-  <ion-icon [routerLink]="['/registration']" name="calendar" size="large" class="cal"></ion-icon>
-  <ion-icon [routerLink]="['/student']" name="person" size="large"></ion-icon>
-  <ion-icon [routerLink]="['/registration']" name="document" size="large"></ion-icon>
-  <ion-icon [routerLink]="['/registration']" name="stats" size="large"></ion-icon>
-  <ion-icon [routerLink]="['/registration']" name="card" size="large"></ion-icon>
-
-</div>
-
- </ion-content>
+  </div><br>
+  <ion-text color="secondary" class="fname">
+    <h3>KABIR SHRESTHA</h3>
+  </ion-text>
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button class="shadow-red" start>
+          <ion-icon [routerLink]="['/calander']" name="calendar" size="large"></ion-icon><br>
+          Calender
+        </button>    
+      </ion-col>
+      <ion-col>
+        <button class="shadow-red">
+          <ion-icon [routerLink]="['/student']" name="person" size="large"></ion-icon><br>
+          Student<br> profile
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
