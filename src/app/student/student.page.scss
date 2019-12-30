@@ -1,9 +1,10 @@
 ion-card{
-    height:1in0vh;
-    width: 90vw;
+    text-align: center;
+    width: 92vw;
     overflow: visible;    
 }
 ion-card-content{
+    text-align: center;
     height: 70%;
     overflow: visible;    
 }
@@ -11,4 +12,8 @@ ion-img{
     height: 20vh;
     width: auto;
     margin-top: -75px;
+}
+
+.info {     
+    width: 83vw;
 }

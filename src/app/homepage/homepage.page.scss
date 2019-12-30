@@ -1,8 +1,15 @@
+ion-toolbar {
+    --background: linear-gradient(162deg, rgba(56, 70, 108, .8) 20%, rgba(56, 70, 108, .8) 100%) bottom no-repeat;
+}
+
 .card {
-    margin: 0 auto;
+    background-image: url(/assets/Img/hpgbg.jpg);
+    background-size: 375px ;
+    margin: 200;
+   
 
     .header {
-        height: 200px;
+        height: 140px;
 
         .avatar {
             width: 90px;
@@ -22,9 +29,31 @@
     }
 }
 
-.cal{
-    width: 90px;
-            height: 50px;
-            position: relative;
-            margin: 0 auto;
-}
+
+ion-button {
+    background-color: rgb(57, 139, 221);
+    color: white;
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 50px;
+  }
+  
+
+  .fname{
+    text-align: center;
+  }
+
+  
+  .shadow-red{
+    border-radius: 50%;
+    display: inline-block;
+  text-align: center;
+  }
+
+  ion-row{
+    text-align: center;
+  }
+
+  ion-grid{
+    margin-top: 190px;
+  }
