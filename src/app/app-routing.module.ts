@@ -44,6 +44,14 @@ const routes: Routes = [
     path: 'dailyclassreport',
     loadChildren: () => import('./dailyclassreport/dailyclassreport.module').then( m => m.DailyclassreportPageModule)
   },
+  {
+    path: 'application',
+    loadChildren: () => import('./application/application.module').then( m => m.ApplicationPageModule)
+  },
+  {
+    path: 'daily-class-report',
+    loadChildren: () => import('./daily-class-report/daily-class-report.module').then( m => m.DailyClassReportPageModule)
+  },
 ];
 
 @NgModule({
