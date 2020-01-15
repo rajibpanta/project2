@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title>Calendar</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+  
+
+    <mbsc-form [options]="formSettings" #mbscForm="mobiscroll">
+        <div class="mbsc-grid">
+            <div class="mbsc-row">
+                <div class="mbsc-col-sm-12 mbsc-col-md-4">
+                    <mbsc-form-group>
+                        <mbsc-button (click)="auth()" class="mbsc-btn-block" [hidden]="calApiLoaded">Add Google Calendars</mbsc-button>
+                        <div *ngFor="let cal of cals">
+                            <mbsc-switch [(ngModel)]="cal.checked" (change)="onChange($event, cal.id)">
+                                {{cal.summary}}
+                                <span class="mbsc-desc">{{cal.description}}</span>
+                            </mbsc-switch>
+                        </div>
+                    </mbsc-form-group>
+                </div>
+                <div class="mbsc-col-sm-12 mbsc-col-md-8">
+                    <mbsc-form-group>
+                        <mbsc-eventcalendar [data]="events" [options]="calSettings" #mbscCal="mobiscroll"></mbsc-eventcalendar>
+                    </mbsc-form-group>
+                </div>
+            </div>
+        </div>
+    </mbsc-form>
+</ion-content>

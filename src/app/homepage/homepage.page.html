@@ -1,18 +1,10 @@
 <ion-header>
   <ion-toolbar>
-  <h1></h1>
   </ion-toolbar>
 </ion-header>
 
 <ion-content fullscreen="true" slot="fixed">
-  <ion-item>
-    <ion-label>Gender</ion-label>
-    <ion-select placeholder="Select One">
-      <ion-select-option value="f">Female</ion-select-option>
-      <ion-select-option value="m">Male</ion-select-option>
-    </ion-select>
-  </ion-item>
-
+  
   <div class="card">
     <div class="header">
       <div class="avatar">
@@ -27,52 +19,52 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-button class="shadow-red" >
-          <ion-icon [routerLink]="['/calander']" name="calendar" size="large"></ion-icon>
+        <ion-button [routerLink]="['/calander']" class="shadow-red" >
+          <ion-icon name="calendar" size="large"></ion-icon>
         </ion-button> <br>
         <ion-text class="desc">Calender</ion-text>  
       </ion-col>
       <ion-col>
-        <ion-button class="shadow-red" >
-          <ion-icon [routerLink]="['/student']" name="person" size="large"></ion-icon><br>
+        <ion-button  [routerLink]="['/student']" class="shadow-red" >
+          <ion-icon  name="person" size="large"></ion-icon><br>
         </ion-button><br>
         <ion-text class="desc">Student<br> Profile</ion-text>
       </ion-col>
       <ion-col>
-        <ion-button class="shadow-red" ion-text-align="center">
-          <ion-icon [routerLink]="['/dailyclassreport']" name="copy" size="large"></ion-icon><br>
+        <ion-button [routerLink]="['/dailyclassreport']" class="shadow-red" ion-text-align="center">
+          <ion-icon name="copy" size="large"></ion-icon><br>
         </ion-button><br>
         <ion-text class="desc">Daily Class Report</ion-text>
       </ion-col>
       <ion-col>
-        <ion-button  class="shadow-red">
-          <ion-icon [routerLink]="['/registration']" name="alarm" size="large"></ion-icon><br>
+        <ion-button  [routerLink]="['/registration']"  class="shadow-red">
+          <ion-icon name="alarm" size="large"></ion-icon><br>
         </ion-button><br>
         <ion-text class="desc">Class <br> Schedule</ion-text>
       </ion-col>
     </ion-row> 
       <ion-row>
       <ion-col>
-        <ion-button  class="shadow-red">
-          <ion-icon [routerLink]="['/registration']" name="stats" size="large"></ion-icon><br>
+        <ion-button [routerLink]="['/registration']"   class="shadow-red">
+          <ion-icon name="stats" size="large"></ion-icon><br>
         </ion-button><br>
         <ion-text class="desc">Results</ion-text>
       </ion-col>
       <ion-col>
-        <ion-button  class="shadow-red">
-          <ion-icon [routerLink]="['/registration']" name="document" size="large"></ion-icon>
+        <ion-button [routerLink]="['/registration']"  class="shadow-red">
+          <ion-icon name="document" size="large"></ion-icon>
         </ion-button><br>
         <ion-text class="desc">Leave<br> Application</ion-text>
       </ion-col>
       <ion-col>
-        <ion-button  class="shadow-red">
-          <ion-icon [routerLink]="['/registration']" name="paper" size="large"></ion-icon><br>
+        <ion-button [routerLink]="['/notice']" class="shadow-red">
+          <ion-icon name="paper" size="large"></ion-icon><br>
         </ion-button><br>
         <ion-text class="desc">Notices</ion-text>
       </ion-col>
       <ion-col>
-        <ion-button  class="shadow-red">
-          <ion-icon [routerLink]="['/registration']" name="Card" size="large"></ion-icon><br>
+        <ion-button [routerLink]="['/registration']" class="shadow-red">
+          <ion-icon name="Card" size="large"></ion-icon><br>
         </ion-button><br>
         <ion-text class="desc">Online<br> Payment</ion-text>
       </ion-col>

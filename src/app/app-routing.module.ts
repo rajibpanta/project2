@@ -29,10 +29,6 @@ const routes: Routes = [
     loadChildren: () => import('./startscreen/startscreen.module').then( m => m.StartscreenPageModule)
   },
   {
-    path: 'startscreen',
-    loadChildren: () => import('./startscreen/startscreen.module').then( m => m.StartscreenPageModule)
-  },
-  {
     path: 'student',
     loadChildren: () => import('./student/student.module').then( m => m.StudentPageModule)
   },
@@ -43,6 +39,14 @@ const routes: Routes = [
   {
     path: 'dailyclassreport',
     loadChildren: () => import('./dailyclassreport/dailyclassreport.module').then( m => m.DailyclassreportPageModule)
+  },
+  {
+    path: 'notice',
+    loadChildren: () => import('./notice/notice.module').then( m => m.NoticePageModule)
+  },
+  {
+    path: 'result',
+    loadChildren: () => import('./result/result.module').then( m => m.ResultPageModule)
   },
 ];
 
